@@ -1,25 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Mobile Version Skeloton Buit By Dvid Lyangenda
 
-> Description the project.
+> For the first milestone in the process of creating my portfolio website, i will:
+set up a new repository and prepare it for development using best practices (e.g. linters).build the first 2 sections of the mobile website using the template i will choose on figma..
 
+![screenshot](mobileskeleton.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo (if available)
-
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
+## Instructions on how to access my project locally
+To Access my project locally please follow the following instructions;
+1. Enter this url:  in your web browser.
+2. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
+3. Select download Zip option from drop down menu.
+4. Once the download is complete you will be able to access my project locally.
+Here is my repository link: 
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+** 
 
 
 To get a local copy up and running follow these simple example steps.
@@ -42,15 +47,10 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/LYANGEND)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lyangenda-623087151/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
