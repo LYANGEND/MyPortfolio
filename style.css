@@ -72,13 +72,13 @@ body {
 }
 
 .nav-bar {
-  width: 90%;
   height: 70px;
   color: #565b86;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
+  margin-right: 48px;
 }
 
 .logo {
@@ -88,6 +88,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   color: #6070ff;
+  margin-left: 30px;
 }
 
 .first-section {
