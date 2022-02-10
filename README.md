@@ -6,14 +6,13 @@
 set up a new repository and prepare it for development using best practices (e.g. linters).build the first 2 sections of the mobile website using the template i will choose on figma..
 
 ![screenshot](mobileskeleton.png)
-
 ## Built With
 
 - HTML
 - CSS
 
 ## Live Demo (if available)
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://lyangend.github.io/MyPortfolio/)
 
 
 ## Instructions on how to access my project locally
