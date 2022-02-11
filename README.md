@@ -5,7 +5,7 @@
 > For the first milestone in the process of creating my portfolio website, i will:
 set up a new repository and prepare it for development using best practices (e.g. linters).build the first 2 sections of the mobile website using the template i will choose on figma..
 
-![screenshot](mobileskeleton.png)
+![screenshot](123.png)
 
 ## Built With
 
