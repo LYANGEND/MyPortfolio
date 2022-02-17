@@ -278,8 +278,6 @@ a .btn-two {
   width: 327px;
 }
 
-
-
 .about-grid {
   display: flex;
   flex-direction: column;
@@ -365,7 +363,7 @@ a .btn-two {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color:  #FFFFFF;;
+  color: #ffffff;
 }
 
 .footer p {
@@ -388,7 +386,7 @@ a .btn-two {
 
 .contact__form input[type="text"],
 input[type="email"] {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 15px;
   border-radius: 8px;
   font-family: var(--font-family);
@@ -442,7 +440,7 @@ input[type="email"]::placeholder {
 
 .contact__form input[type="submit"] {
   padding: 12px 16px;
-  background-color:#FFFFFF;
+  background-color: #ffffff;
   width: 140px;
   border-radius: 8px;
   font-family: var(--font-family);
