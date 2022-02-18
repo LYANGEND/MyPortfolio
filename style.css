@@ -78,8 +78,6 @@ input {
   }
 }
 
-/* Header */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -114,7 +112,7 @@ header {
   color: #0087ca;
 }
 
-.underline-animation:after {
+.underline-animation::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -127,7 +125,7 @@ header {
   transition: transform 0.25s ease-out;
 }
 
-.underline-animation:hover:after {
+.underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
