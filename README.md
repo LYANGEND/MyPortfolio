@@ -20,6 +20,10 @@ To Access my project locally please follow the following instructions;
 4. Once the download is complete you will be able to access my project locally.
 Here is my repository link: 
 
+## my live Portfolio link
+
+https://lyangend.github.io/MyPortfolio/
+
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/LYANGEND)
