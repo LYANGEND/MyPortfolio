@@ -563,6 +563,7 @@ header {
   right: 0;
   bottom: 0;
   z-index: 99;
+  mix-blend-mode: multiply;
 }
 
 .open-class{
@@ -572,6 +573,7 @@ header {
 #closeIcon {
   color: white;
   display: none;
+  z-index: 100px;
 }
 
 @media screen and (max-width: 1100px) {
