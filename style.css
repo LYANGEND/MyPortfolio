@@ -557,6 +557,12 @@ header {
   mix-blend-mode: multiply;
 }
 
+.open-class{
+  display:block;
+  
+
+}
+
 @media screen and (max-width: 1100px) {
   .section__padding {
     padding: 100px 95px;
