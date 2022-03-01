@@ -553,6 +553,8 @@ header {
 
 .menu-bar {
   display: none;
+  background: #6070FF;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (max-width: 1100px) {
