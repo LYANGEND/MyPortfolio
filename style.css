@@ -104,6 +104,7 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-right: 2rem;
+  z-index: 100;
 }
 
 .underline-animation {
@@ -552,15 +553,25 @@ header {
 }
 
 .menu-bar {
-  display: none;
   background: #6070FF;
   mix-blend-mode: multiply;
+  position: fixed;
+  display: none;
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
 }
 
 .open-class{
-  display:block;
-  
+  display: block;
+}
 
+#closeIcon {
+  color: white;
+  display: none;
 }
 
 @media screen and (max-width: 1100px) {
