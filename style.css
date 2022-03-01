@@ -551,6 +551,10 @@ header {
   max-width: 190px;
 }
 
+.menu-bar {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .section__padding {
     padding: 100px 95px;
