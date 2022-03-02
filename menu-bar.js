@@ -1,22 +1,37 @@
-const menubar = document.querySelector('.menu-bar');
-const listItems = document.querySelectorAll('.navbarItems'); // list of all the items in the menu bar (navbarItems)
-const closeicon = document.querySelector('#closeIcon');
-const openicon = document.querySelector ('#openIcon');
-const hamburgerMenu = document.querySelector('.header__nav-container__mobile_menu');
-const closingMenu = document.querySelector('#hamburger');
-
-function toggleMenu() {
-  if (menubar.classList.contains('open-class')) {
-    menubar.classList.remove('open-class');
-    closeicon.style.display = 'none';
-    openicon.style.display = 'block';
-} else {
-    menubar.classList.add('open-class');
-    closeicon.style.display = 'block';
-    openicon.style.display = 'none';
-}
+const mobileNav = document.getElementById('mobile_nav');
+const mobileMenuOpen = document.getElementById('mobile_menu_open');
+const mobileNavClose = document.getElementById('mobile_menu_close');
+const li = mobileNav.getElementsByTagName('a');
+const cardsContainer = document.getElementById('works');
+const buttons = cardsContainer.getElementsByTagName('button');
+const modalContainer = document.getElementById('modal');
+const modalCloseButton = document.getElementById('modalClose');
+let i;
+let j;
+function ShowMobileNav() {
+  mobileNav.classList.remove('hidden');
+  mobileMenuOpen.classList.add('hidden');
 }
 
+function HideMobileNav() {
+  mobileNav.classList.add('hidden');
+  mobileMenuOpen.classList.remove('hidden');
+}
 
-hamburgerMenu.addEventListener("click", toggleMenu);
-closingMenu.addEventListener("click", toggleMenu);
+function ShowModal() {
+  modalContainer.classList.remove('hidden');
+}
+
+function HideModal() {
+  modalContainer.classList.add('hidden');
+}
+
+mobileMenuOpen.addEventListener('click', ShowMobileNav);
+mobileNavClose.addEventListener('click', HideMobileNav);
+modalCloseButton.addEventListener('click', HideModal);
+for (i = 0; i < li.length; i += 1) {
+  li[i].addEventListener('click', HideMobileNav);
+}
+for (j = 0; j < buttons.length; j += 1) {
+  buttons[j].addEventListener('click', ShowModal);
+}
