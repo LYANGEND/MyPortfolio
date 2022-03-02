@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Mobile Version Skeloton Buit By Dvid Lyangenda
+# Mobile Version Portfolio Buit By David Lyangenda
 
 > For the first milestone in the process of creating my portfolio website, i will:
 set up a new repository and prepare it for development using best practices (e.g. linters).build the first 2 sections of the mobile website using the template i will choose on figma..
@@ -19,6 +19,10 @@ To Access my project locally please follow the following instructions;
 3. Select download Zip option from drop down menu.
 4. Once the download is complete you will be able to access my project locally.
 Here is my repository link: 
+
+## my live Portfolio link
+
+https://lyangend.github.io/MyPortfolio/
 
 👤 **Author1**
 
