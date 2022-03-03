@@ -19,8 +19,8 @@ const cards = [
     featuredImage: './images/photo1dt.png',
     desktopImage: 'images/photo1dt.png',
     technologies: ['html', 'css', 'javascript', 'ruby'],
-    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
-    linktosource: 'https://github.com/misheck12/Portfolio',
+    linktoliveversion: 'https://lyangend.github.io/MyPortfolio/',
+    linktosource: 'https://github.com/LYANGEND/MyPortfolio',
   },
   {
     key: 1,
@@ -31,8 +31,8 @@ const cards = [
     featuredImage: './images/photo2dt.png',
     desktopImage: './images/photo2dt.png',
     technologies: ['html', 'css', 'javascript', 'ruby'],
-    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
-    linktosource: 'https://github.com/misheck12/Portfolio',
+    linktoliveversion: 'https://lyangend.github.io/MyPortfolio/',
+    linktosource: 'https://github.com/LYANGEND/MyPortfolio',
   },
   {
     key: 2,
@@ -43,8 +43,8 @@ const cards = [
     featuredImage: './images/photo3dt.png',
     desktopImage: './images/photo3dt.png',
     technologies: ['html', 'css', 'javascript', 'ruby'],
-    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
-    linktosource: 'https://github.com/misheck12/Portfolio/',
+    linktoliveversion: 'https://lyangend.github.io/MyPortfolio/',
+    linktosource: 'hhttps://lyangend.github.io/MyPortfolio/',
   },
   {
     key: 3,
@@ -55,8 +55,8 @@ const cards = [
     featuredImage: './images/photo4dt.png',
     desktopImage: './images/photo4dt.png',
     technologies: ['html', 'css', 'javascript', 'git hub', 'ruby', 'Bootstrap'],
-    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
-    linktosource: 'https://github.com/misheck12/Portfolio/',
+    linktoliveversion: 'https://lyangend.github.io/MyPortfolio/',
+    linktosource: 'https://lyangend.github.io/MyPortfolio/',
   },
 ];
 
