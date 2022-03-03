@@ -2,231 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Lyangenda</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLY4D8VJF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LBLY4D8VJF');
-</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLY4D8VJF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-LBLY4D8VJF');
+  </script>
+  <title>David Lyangenda's Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="header__brand-container">
-            <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
-        </div>
-        <ul class="header__nav-container">
-            <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#works">Portoflio</a></li>
-            <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#about">About</a></li>
-            <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#contact">Contact</a></li>
+  <header class="white">
+    <a class="logo" href="#">My logo</a>
+    <nav class="nav-bar">
+      <a class="bars" href="#"><img src="images/menu.png" alt="menu navbar"></a>
+    </nav>
+    <nav class="menu-desktop">
+      <ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#about-myself">About</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="sidebar">
+    
+    <img src="images/cancel.png" alt="close" class="cancel cancel-styling">
+    <div class="sidebar-menu">
+      <a href="#work" class="anchor-link">Portfolio</a>
+      <a href="#about-myself" class="anchor-link">About</a>
+      <a href="#contacts" class="anchor-link">Contact</a>
+    </div>
+  </section>
+  <section class="modal">
+    <button class="cancels" type="button">&times;</button>
+    <div class="modal-inner">
+    </div>
+  </section>
+  <main>
+    <section class="first-section" id="welcome">
+      <div class="text">
+        <h1 class="salutation">
+          I'm David, <br> Glad to see you!
+        </h1>
+        <p class="paragraph1">I’m a software developer! I can help you build a product , feature or website Look through
+          some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+          contact me.</p>
+
+        <p class="lets-connect"> LET'S CONNECT</p>
+
+        <ul class="icons-media">
+          <li><a href="#"><img src="images/twitter.png" alt="social"> </a></li>
+          <li><a href="#"><img src="images/Linkedin.png" alt="social"></a></li>
+          <li><a href="#"><img src="images/medium.png" alt="social"></a></li>
+          <li><a href="#"><img src="images/github.png" alt="social"></a></li>
+          <li><a href="#"><img src="images/angellist.png" alt="social"></a></li>
         </ul>
-        <nav class="header__nav-container__mobile_menu">
-            <img src="./images/menu.svg" alt="hamburgar menu" />
-        </nav>
-    </header>
-
-    <section class="intro">
-        <div class="intro__container">
-            <h1>I'm David<br /> Glad to see you!</h1>
-            <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
-                work and
-                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-            <button class="submit-type">LET’S CONNECT</button>
-            <ul class="social__links-container">
-                <li class="scale_up"><a href="twitter.com/"><img src="./images/twitter.svg" alt="Twiiter logo" /></a>
-                </li>
-                <li class="scale_up"><a href="linkedin.com/"><img src="./images/Linkedin.svg" alt="LinkedIn logo" /></a>
-                </li>
-                <li class="scale_up"><a href="medium.com/"><img src="./images/medium.svg" alt="Medium logo" /></a></li>
-                <li class="scale_up"><a href="githubusercontent.com/"><img src="./images/github.svg"
-                            alt="GitHub logo" /></a></li>
-                <li class="scale_up"><a href="angellist.com/"><img src="./images/angellist.svg"
-                            alt="angellist logo" /></a></li>
-            </ul>
-        </div>
+      </div>
     </section>
 
-    <section class="section__margin" id="works">
-        <div class="work__container-items_container">
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="./images/Portoflio-Cards/Portfolio1.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Tonic</h3>
-                        <div class="card__body-company">
-                            <h4>CANOPY</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Back End Dev</li>
-                                <li>2022</li>
-                            </ul>
-                        </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img image__right">
-                        <img src="./images/Portoflio-Cards/Portfolio2.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Multi-Post Stories</h3>
-                        <div class="card__body-company">
-                            <h4>FACEBOOK</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Full Stack Dev</li>
-                                <li>2022git</li>
-                            </ul>
-                        </div>
-                        <p>Experimental content creation feature that allows users to add to an existing story over the
-                            course of a day without
-                            spamming their friends.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="./images/Portoflio-Cards/Portfolio3.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Facebook 360</h3>
-                        <div class="card__body-company">
-                            <h4>FACEBOOK</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Full Stack Dev</li>
-                                <li>2015</li>
-                            </ul>
-                        </div>
-                        <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover
-                            and enjoy 360 photos and
-                            videos on Gear VR.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img image__right">
-                        <img src="./images/Portoflio-Cards/Portfolio1.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Uber Navigation</h3>
-                        <div class="card__body-company">
-                            <h4>Uber</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Lead Developer</li>
-                                <li>2018</li>
-                            </ul>
-                        </div>
-                        <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most
-                            expensive computer: your car.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="work-section" id="work">
+   
     </section>
 
-    <section class="about__section-container section__padding" id="about">
-        <div class="about__section-about_me">
-            <h2>About <br /> Myself</h2>
-            <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
-                my work and
-                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-            <a class="lets__connect-btn" href="#">LET’S CONNECT</a>
-            <ul class="social__links-container">
-                <li><a href="twitter.com/"><img src="./images/twitter.svg" alt="Twiiter logo" /></a></li>
-                <li><a href="linkedin.com/"><img src="./images/Linkedin.svg" alt="LinkedIn logo" /></a></li>
-                <li><a href="medium.com/"><img src="./images/medium.svg" alt="Medium logo" /></a></li>
-                <li><a href="githubusercontent.com/"><img src="./images/github.svg" alt="GitHub logo" /></a></li>
-                <li><a href="angellist.com/"><img src="./images/angellist.svg" alt="angellist logo" /></a></li>
-            </ul>
-            <button type="submit" class="button__outlined">Get my resume</button>
+    <section class="section-about" id="about-myself">
+      <div class="about-grid">
+        <div class="headline-text">
+          <h1>About Myself</h1>
+
+          <p class="paragraph1 para-about">Hello I’m a software developer! I can help you build a product , feature or
+            website
+            Look through some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.</p>
+          <p class="lets-connect"> LET'S CONNECT</p>
+
+          <ul class="social-media getmyr">
+            <li><a href="#"> <img src="./images/twitter.png" alt="social"> </a></li>
+            <li><a href="#"> <img src="./images/Linkedin.png" alt="social"></a></li>
+            <li><a href="#"> <img src="./images/medium.png" alt="social"></a></li>
+            <li><a href="#"> <img src="./images/github.png" alt="social"></a></li>
+            <li><a href="#"> <img src="./images/angellist.png" alt="social"></a></li>
+          </ul>
+          <br>
+          <button class="btn-one btn-resume" type="button">Get My Resume</button>
         </div>
-        <div class="about__section-skills">
-            <ul class="about__section_skills-items">
-                <li class="about__section_skills-item active">Languages <img class="icon" src="images/arrow-down.svg"
-                        alt="arrow down" />
-                    <ul class="about__section_skills-languages">
-                        <li>
-                            <img src="images/javascript.png" alt="Javascript logo">
-                            <a href="#">JavaSript</a>
-                        </li>
-                        <li>
-                            <img src=" images/html.png" alt="HTML5 logo">
-                            <a href="#">HTML</a>
-                        </li>
-                        <li>
-                            <img src="images/css.png" alt="CSS3 logo">
-                            <a href="#">CSS</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="about__section_skills-item">Frameworks <img class="icon" src="images/arrow-right.svg"
-                        alt="right angle" />
-                </li>
-                <li class="about__section_skills-item">Skills <img class="icon" src="images/arrow-right.svg"
-                        alt="right angle" />
-                </li>
-            </ul>
+        <div class="skills-section">
+          <div class="lang lang-2">
+            <h3 class="lang-font">Languages</h3>
+            <a href="#"><img class="icons" src="images/down-arrow.png" alt="arrow"></a>
+          </div>
+          <ul class="langlist">
+            <li class="language">
+              <img src="images/jscript.png" alt="js">
+              <h3 class="lang-text">JavaScript</h3>
+            </li>
+            <li class="language">
+              <img src="images/html.png" alt="HTML">
+              <h3 class="lang-text">HTML</h3>
+            </li>
+            <li class="language">
+              <img src="images/css.png" alt="CSS">
+              <h3 class="lang-text">CSS</h3>
+            </li>
+          </ul>
+          <div class="lang lang-2 lang3">
+            <h3 class="lang-font">Frameworks</h3>
+            <a href="#"><img class="icons" src="images/right-arrow.png" alt="arrow"></a>
+          </div>
+          <div class="lang lang-2 lang3">
+            <h3 class="lang-font">Skills</h3>
+            <a href="#"><img class="icons" src="images/right-arrow.png" alt="arrow"></a>
+          </div>
         </div>
+      </div>
     </section>
-
-    <footer class="footer" id="contact">
-        <div class="footer__container">
-            <h2>
-                Contact Me
-            </h2>
-            <p> If you have an application you are interested in developing, a feature that you need built or a project
-                that
-                needs coding. I’d love to help with it </p>
-            <form class="contact__form" method="post" action="https://formspree.io/f/xeqngaoy">
-                <input type="text" maxlength="30" name="full_name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <textarea name="msg" placeholder="Write your message here " maxlength="500" required></textarea>
-                <button type="submit">Get It Touch</button>
-            </form>
-        </div>
-    </footer>
-
+    <section class="contact-section" id="contacts">
+      <br>
+      <div class="contact-form">
+        <h2 class="con-title">Contact me</h2>
+        <p class="con-paragraph">If you have an application you are interested in developing, a feature that
+          you
+          need built or a project that needs coding. I’d love to help with it</p>
+        <form action="https://formspree.io/f/mzbogvbb" method="POST" class="con-form">
+          <input type="text" name="_name" placeholder="Name" maxlength="30" class="form-text" required>
+          <input type= "email" name="_reply" placeholder= "Please enter your Email" class="form-text" id="mail" required>
+          <small class="error-message"></small>
+          <textarea name="_message" placeholder="Write your message here" cols="20" rows="10" maxlength="500"
+            class="form-text message" required></textarea>
+          <button class="con-but" type="submit">Get in touch</button>
+          
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
