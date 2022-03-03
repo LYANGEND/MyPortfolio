@@ -1,204 +1,300 @@
-const mobileNav = document.getElementById('mobile_nav');
-const mobileMenuOpen = document.getElementById('mobile_menu_open');
-const mobileNavClose = document.getElementById('mobile_menu_close');
-const li = mobileNav.getElementsByTagName('a');
-const cardsContainer = document.getElementById('cardsContainer');
-const buttons = cardsContainer.getElementsByTagName('button');
-const modalContainer = document.getElementById('modal');
+const Bar = document.querySelector('.bars');
+const sideBar = document.querySelector('.sidebar');
+const cancel = document.querySelector('.cancel');
+const anchorLink = document.querySelectorAll('.anchor-link');
+const Body = document.querySelector('body');
 
-let i;
-let j;
+const cancelModal = document.querySelector('.cancels');
+const modal = document.querySelector('.modal');
+const modalInner = document.querySelector('.modal-inner');
+const width = window.innerWidth;
 
-const projects = [
+const cards = [
   {
-    id: '1',
-    title: 'Tonic',
-    featured_image: './images/Portoflio-Cards/Portfolio1.png',
-    company: {
-      name: 'CONOPY',
-      position: 'Back End Dev',
-      date: '2018',
-    },
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javascript'],
-    live: 'https://mo7amedsmahdi.github.io/Personal-Portfolio/',
-    source: 'https://github.com/Mo7amedSMahdi/Personal-Portfolio/',
+    key: 0,
+    name: 'Tonic',
+    option: ['CANOPY', 'Back End Dev', '2015'],
+    optionMobile: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    featuredImage: './images/photo1dt.png',
+    desktopImage: 'images/photo1dt.png',
+    technologies: ['html', 'css', 'javascript', 'ruby'],
+    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
+    linktosource: 'https://github.com/misheck12/Portfolio',
   },
   {
-    id: '2',
-    title: 'Multi-Post Stories',
-    featured_image: './images/Portoflio-Cards/Portfolio2.png',
-    company: {
-      name: 'FACEBOOK',
-      position: 'Full Stack Dev',
-      date: '2015',
-    },
-    description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live: 'https://mo7amedsmahdi.github.io/Personal-Portfolio/',
-    source: 'https://github.com/Mo7amedSMahdi/Personal-Portfolio/',
+    key: 1,
+    name: 'Multi-post Stories',
+    option: ['FACEBOOK', 'Back End Dev', '2015'],
+    optionMobile: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    featuredImage: './images/photo2dt.png',
+    desktopImage: './images/photo2dt.png',
+    technologies: ['html', 'css', 'javascript', 'ruby'],
+    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
+    linktosource: 'https://github.com/misheck12/Portfolio',
   },
   {
-    id: '3',
-    title: 'Facebook 360',
-    featured_image: './images/Portoflio-Cards/Portfolio3.png',
-    company: {
-      name: 'FACEBOOK',
-      position: 'Full Stack Dev',
-      date: '2015',
-    },
-    description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live: 'https://mo7amedsmahdi.github.io/Personal-Portfolio/',
-    source: 'https://github.com/Mo7amedSMahdi/Personal-Portfolio/',
+    key: 2,
+    name: 'FACEBOOK 360',
+    option: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    optionMobile: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
+    featuredImage: './images/photo3dt.png',
+    desktopImage: './images/photo3dt.png',
+    technologies: ['html', 'css', 'javascript', 'ruby'],
+    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
+    linktosource: 'https://github.com/misheck12/Portfolio/',
   },
   {
-    id: '4',
-    title: 'Uber Navigation',
-    featured_image: './images/Portoflio-Cards/Portfolio4.png',
-    company: {
-      name: 'Uber',
-      position: 'Lead Developer',
-      date: '2018',
-    },
-    description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live: 'https://mo7amedsmahdi.github.io/Personal-Portfolio/',
-    source: 'https://github.com/Mo7amedSMahdi/Personal-Portfolio/',
+    key: 3,
+    name: 'Uber Navigation',
+    option: ['Uber', 'Lead Developer', '2018'],
+    optionMobile: ['CANOPY', 'Back End Dev', '2015'],
+    description: ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    featuredImage: './images/photo4dt.png',
+    desktopImage: './images/photo4dt.png',
+    technologies: ['html', 'css', 'javascript', 'git hub', 'ruby', 'Bootstrap'],
+    linktoliveversion: 'https://misheck12.github.io/Portfolio/',
+    linktosource: 'https://github.com/misheck12/Portfolio/',
   },
 ];
 
-function LoadProjects() {
-  let counter;
-  for (counter = 0; counter < projects.length; counter += 1) {
-    let k;
-    let technologies = '';
-    for (k = 0; k < projects[counter].technologies.length; k += 1) {
-      technologies += `<li>
-        <a href='#'>${projects[counter].technologies[k]}</a>
-      </li>`;
-    }
-    cardsContainer.innerHTML += `<div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="${projects[counter].featured_image}" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>${projects[counter].title}</h3>
-                        <div class="card__body-company">
-                            <h4>${projects[counter].company.name}</h4>
-                            <ul class="card__body-company__rols">
-                                <li>${projects[counter].company.position}</li>
-                                <li>${projects[counter].company.date}</li>
-                            </ul>
-                        </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="card__body-tags">
-                            ${technologies}
-                        </ul>
-                        <button data-target="${projects[counter].id}" type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>`;
-  }
+function grab(e) {
+  return document.getElementById(e);
+}
 
-  function ShowMobileNav() {
-    mobileNav.classList.remove('hidden');
-    mobileMenuOpen.classList.add('hidden');
-  }
+const Openpopup = ({
+  name, description, featuredImage, desktopImage,
+  technologies, linktoliveversion, linktosource, option, optionMobile,
+}) => () => {
+  let displayModal = '';
+  modal.classList.add('show-modal');
 
-  function HideMobileNav() {
-    mobileNav.classList.add('hidden');
-    mobileMenuOpen.classList.remove('hidden');
-  }
-
-  function HideModal() {
-    modalContainer.classList.add('hidden');
-  }
-
-  function ShowModal(e) {
-    const targetId = e.target.getAttribute('data-target');
-    const project = projects.filter((item) => item.id === targetId);
-    let technologies = '';
-    let k;
-    for (k = 0; k < project[0].technologies.length; k += 1) {
-      technologies += `<li>
-        <a href='#'>${project[0].technologies[k]}</a>
-      </li>`;
-    }
-    const modal = `<div class="modal">
-            <div class="modal__header">
-                <div class="modal__header__top">
-                    <h2 class="modal__title">${project[0].title}</h2>
-                    <img id="modalClose" src="./images/icon-close-gray.svg" alt="">
-                </div>
-                <div class="modal__header__content">
-                    <h4>${project[0].company.name}</h4>
-                    <ul class="card__body-company__rols">
-                        <li>${project[0].company.position}</li>
-                        <li>${project[0].company.date}</li>
-                    </ul>
-                </div>
-                <div class="modal__img">
-                    <img src="${project[0].featured_image}" alt="">
-                </div>
+  displayModal += `
+         <div class="modal-head">
+          <h3 class="modal-title">${name}</h3>
+         </div>
+         <ul class="card-detail-header-container">
+             <li class="card-detail canopy-modal">${width > 1024 ? option[0] : optionMobile[0]}</li>
+             <li class="card-detail canopy-modal option-modal"><img src="images/bullets.png" class="bullets" alt="bullet"> ${width > 1024 ? option[1] : optionMobile[1]}</li>
+             <li class="card-detail canopy-modal option-modal"><img src="images/bullets.png" class="bullets" alt="bullet">${width > 1024 ? option[2] : optionMobile[2]} </li>
+           </ul>
+            
+          <div class='modal-img-container' >
+            <img src='${width > 1024 ? desktopImage : featuredImage}' alt="modal picture" class="modal-img">
+          </div>
+          <div class="modal-text">
+            <div class="popup-description">
+            ${description}
             </div>
-            <div class="modal__body">
-                <div class="modal__description">
-                    <p>${project[0].description}</p>
-                </div>
-                <div class="modal__description_actions">
-                    <div class="modal_list">
-                        <ul class="card__body-tags">
-                            ${technologies}
-                        </ul>
-                    </div>
-                    <span class="devider"></span>
-                    <div class="button__group">
-                        <a href="${project[0].live}" target="_blank" class="button__outlined">See live<i class="icon-live"></i></a>
-                        <a href="${project[0].source}" target="_blank" class="button__outlined">See Source<i class="icon-github"></i></a>
-                    </div>
-                </div>
+            <div>
+              <ul class="anchor-div technologies-langu">
+                <li><a href="#">${technologies[0]}</a></li>
+                <li><a href="#">${technologies[1] ? technologies[1] : ''}</a></li>
+                <li><a href="#">${technologies[2] ? technologies[2] : ''}</a></li>
+                <li><a href="#">${technologies[3] ? technologies[3] : ''}</a></li>
+              </ul>
+              <div class="modal-buttons ">
+                <a href='${linktoliveversion}' class="source-btn mr source-desktop">
+                  See Live
+                  <img src="images/Live-icon.svg" class="iconlink" alt="live icon">
+                </a>
+                <a href='${linktosource}' class="source-btn mr">
+                  See Source
+                <img src="images/Github-icon.svg" class="iconlink" alt="Git hub">
+                </a>
+              </div>
             </div>
-        </div>`;
-    modalContainer.innerHTML = modal;
-    modalContainer.classList.remove('hidden');
-    const modalCloseButton = document.getElementById('modalClose');
-    modalCloseButton.addEventListener('click', HideModal);
-  }
+          </div>
+      `;
 
-  mobileMenuOpen.addEventListener('click', ShowMobileNav);
-  mobileNavClose.addEventListener('click', HideMobileNav);
-  for (i = 0; i < li.length; i += 1) {
-    li[i].addEventListener('click', HideMobileNav);
-  }
+  modalInner.innerHTML = displayModal;
+};
 
-  for (j = 0; j < buttons.length; j += 1) {
-    buttons[j].addEventListener('click', ShowModal.bind(buttons[j]));
+function showWorks() {
+  const works = [
+    {
+      title: 'Tonic',
+      options: ['CANOPY', 'Back End Dev', '2015'],
+      imgMobile: 'images/photo1.png',
+      imgDesktop: 'images/photo1dt.png',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      languages: ` <li class="langu langu-a">html</li>
+      <li class="langu langu-b">css</li>
+      <li class="langu langu-c">javascript</li>
+      <li class="langu2">html</li>
+      <li class="langu2">css</li>
+      <li class="langu2">javascript</li>`,
+    },
+    {
+      title: 'Multi-post Stories',
+      options: ['FACEBOOK', 'Back End Dev', '2015'],
+      imgMobile: 'images/photo2.png',
+      imgDesktop: 'images/photo2dt.png',
+      description: 'Experimental content creation features that allows users to add and existing story over the course of the day without spamming their friends.',
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
+      languages: `<li class="langu">html</li>
+      <li class="langu">css</li>
+      <li class="langu">javascript</li>
+      <li class="langu2">html</li>
+      <li class="langu2">Ruby on rails</li>
+      <li class="langu2">css</li>
+      <li class="langu2">javascript</li>`,
+    },
+    {
+      title: 'Facebook 360',
+      options: ['FACEBOOK', 'Full Stack Dev', '2015'],
+      imgMobile: 'images/photo3.png',
+      imgDesktop: 'images/photo3dt.png',
+      description: "Exploring the future of media in Facebook's first Virtual Reality place to discover and enjoy 360 photos and videos on Gear VR .",
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      languages: `<li class="langu">html</li>
+      <li class="langu">css</li>
+      <li class="langu">javascript</li>
+      <li class="langu2">html</li>
+      <li class="langu2">Ruby on rails</li>
+      <li class="langu2">css</li>
+      <li class="langu2">javascript</li>`,
+    },
+    {
+      title: 'Uber Navigation',
+      options: ['Uber', 'Lead Developer', '2018'],
+      imgMobile: 'images/photo4.png',
+      imgDesktop: 'images/photo4dt.png',
+      description: 'A smart assistant to make driving mode safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      languages: `<li class="langu">html</li>
+      <li class="langu">css</li>
+      <li class="langu">javascript</li>
+      <li class="langu2">html</li>
+      <li class="langu2">Ruby on rails</li>
+      <li class="langu2">css</li>
+      <li class="langu2">javascript</li>`,
+    },
+  ];
+
+  for (let k = 0; k < works.length; k += 1) {
+    const work = works[k];
+    const template = document.createElement('template');
+
+    if (k % 2 === 0) {
+      template.innerHTML = `<div class="project-card desktop">
+        <div class="mobile-image">
+          <img src="${work.imgMobile}" alt="First Card">
+        </div>
+        <div class="desktop-image">
+          <img src="${work.imgDesktop}" alt="First card-desktop">
+        </div>
+
+
+        <div class="contents-two">
+          <h2 class="head">${work.title}</h2>
+          <h4 class="desktop_show">${work.title}</h4>
+          <div class="card-detail-box">
+            <ul class="cards-container">
+              <li class="card-detail canopy">${work.options[0]}</li>
+              <li class="card-detail option  "><img src="images/bullets.png" alt="bullet"> ${work.options[1]}</li>
+              <li class="card-detail option"><img src="images/bullets.png" alt="bullet"> ${work.options[2]}</li>
+
+              <li class="card-detail dcanopy2_face">${work.options[0]}</li>
+              <li class="card-detail optiond2_full"><img src="images/bullets.png" alt="bullet"> ${work.options[1]}</li>
+              <li class="card-detail optiond2_full"><img src="images/bullets.png" alt="bullet"> ${work.options[2]}</li>
+            </ul>
+
+            <p class="instruction">${work.description}</p>
+            <p class="instruction-show">${work.description}</p>
+
+            <div class="language1 inline">
+              <ul>${work.languages}</ul>
+            </div>
+          </div>
+          <button type="button" class="btn-one btns">See project</button>
+        </div>
+      </div>
+    `.trim();
+    } else {
+      template.innerHTML = `<div class="project-card card-flex">
+      <div class="mobile-image">
+        <img src="${work.imgMobile}" alt="First Card">
+      </div>
+      <div class="desktop-image">
+        <img src="${work.imgDesktop}" alt="First card-desktop">
+      </div>
+
+
+      <div class="contents">
+        <h2 class="head">${work.title}</h2>
+        <h4 class="desktop_show">${work.title}</h4>
+        <div class="card-detail-box">
+          <ul class="cards-container">
+            <li class="card-detail canopy">${work.options[0]}</li>
+            <li class="card-detail option  "><img src="images/bullets.png" alt="bullet"> ${work.options[1]}</li>
+            <li class="card-detail option"><img src="images/bullets.png" alt="bullet"> ${work.options[2]}</li>
+
+            <li class="card-detail dcanopy2_face">${work.options[0]}</li>
+            <li class="card-detail optiond2_full"><img src="images/bullets.png" alt="bullet"> ${work.options[1]}</li>
+            <li class="card-detail optiond2_full"><img src="images/bullets.png" alt="bullet"> ${work.options[2]}</li>
+          </ul>
+
+          <p class="instruction">${work.description}</p>
+          <p class="instruction-show">${work.description}</p>
+
+          <div class="language1 inline">
+            <ul>${work.languages}</ul>
+          </div>
+        </div>
+        <button type="button" class="btn-one btns">See project</button>
+      </div>
+    </div>
+  `.trim();
+    }
+    const child = template.content.firstChild;
+    grab('work').appendChild(child);
   }
 }
 
-document.addEventListener('DOMContentLoaded', LoadProjects, false);
+function closePopup() {
+  modal.classList.remove('show-modal');
+}
 
-const form = document.getElementById('contactForm');
-const errorMessage = 'Email address should only be in lowercase letters';
-const errorMessageContainer = document.getElementById('error_message');
-const emailInput = document.getElementById('email');
-form.addEventListener('submit', (event) => {
-  const validateRegex = /[A-Z]/;
+document.addEventListener('DOMContentLoaded', () => {
+  const modalButton = document.querySelectorAll('.btns');
+  modalButton.forEach((button, i) => {
+    button.addEventListener('click', Openpopup(cards[i]));
+  });
+});
 
-  if (validateRegex.test(emailInput.value)) {
-    emailInput.style.border = '1px solid red';
-    emailInput.focus();
-    errorMessageContainer.classList.remove('hidden');
-    errorMessageContainer.innerText = errorMessage;
-    event.preventDefault();
-  } else if (!errorMessageContainer.className === 'hidden') {
-    errorMessageContainer.classList.add('hidden');
-    emailInput.style.border = null;
+function openSideBar() {
+  sideBar.classList.add('show-side-bar');
+  Body.classList.add('noscroll');
+}
+
+function closeSideBar() {
+  sideBar.classList.remove('show-side-bar');
+  Body.classList.remove('noscroll');
+}
+
+Bar.addEventListener('click', openSideBar);
+cancel.addEventListener('click', closeSideBar);
+cancelModal.addEventListener('click', closePopup);
+
+anchorLink.forEach((anchor) => {
+  anchor.addEventListener('click', closeSideBar);
+});
+
+window.onload = showWorks();
+
+const formContainer = document.querySelector('.con-form');
+const mailInput = document.getElementById('mail');
+const messageError = document.querySelector('.error-message');
+
+formContainer.addEventListener('submit', (e) => {
+  if (mailInput.value === mailInput.value.toLowerCase()) {
+    messageError.textContent = '';
+  } else {
+    e.preventDefault();
+    messageError.innerHTML = '*Write your email in lower case <br> * form invalid';
   }
 });

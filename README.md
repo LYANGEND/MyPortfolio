@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Mohammed Salah Personal Portfolio
+# David Lyangenda's Personal Portfolio
 
 This is my pesonal Website and Portfolio that list all my profissional skils, Resume and the awsome work.
 
@@ -21,13 +21,14 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 ## Live Demo
 
-[Ckeckout The live Site here](https://mo7amedsmahdi.github.io/Personal-Portfolio/)
+[Ckeckout The live Site here]
+https://lyangend.github.io/MyPortfolio/
 
 ## Getting started
 
 to run the project locally, clone the project using the command
 
-`git clone git@github.com:Mo7amedSMahdi/Personal-Portfolio.git`
+`git@github.com:LYANGEND/MyPortfolio.git`
 
 ### Run test
 
@@ -40,9 +41,9 @@ to test or run the application double click on the `index.html` file to open in 
 
 👤 **Author**
 
-- GitHub: [@Mo7amedSMahdi](https://github.com/Mo7amedSMahdi)
-- Twitter: [@devMo7amed](https://twitter.com/devMo7amed)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammed-mahdi-b20340162/)
+- GitHub: [@LYANGENDA](https://github.com/LYANGEND)
+- Twitter: [@lyangenda](https://twitter.com/devMo7amed)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lyangenda-623087151/)
 
 ## 🤝 Contributing
 
