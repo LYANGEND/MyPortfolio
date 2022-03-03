@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Lyangenda</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLY4D8VJF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60BPY12HZ4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-LBLY4D8VJF');
-</script>
+        gtag('config', 'G-60BPY12HZ4');
+    </script>
 </head>
 
 <body>
@@ -28,19 +27,25 @@
             <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#about">About</a></li>
             <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#contact">Contact</a></li>
         </ul>
-        <nav class="header__nav-container__mobile_menu">
-            <img src="./images/menu.svg" alt="hamburgar menu" />
+        <img id="mobile_menu_open" class="mobile_menu_open" src="./images/menu.svg" alt="hamburgar menu" />
+        <nav id="mobile_nav" class="header__nav-container__mobile_menu hidden">
+            <img id="mobile_menu_close" src="./images/close-icon.svg" alt="mobile menu close icon" />
+            <ul id="mobile__nav-items" class="mobile__nav-items">
+                <li class="mobile_nav_links"><a href="#works">Portoflio</a></li>
+                <li class="mobile_nav_links"><a href="#about">About</a></li>
+                <li class="mobile_nav_links"><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <section class="intro">
         <div class="intro__container">
-            <h1>I'm David<br /> Glad to see you!</h1>
+            <h1>I'm David <br /> Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
                 work and
                 experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
             </p>
-            <button class="submit-type">LET’S CONNECT</button>
+            <a href="#contact" class="lets__connect-btn underline-animation">LET’S CONNECT</a>
             <ul class="social__links-container">
                 <li class="scale_up"><a href="twitter.com/"><img src="./images/twitter.svg" alt="Twiiter logo" /></a>
                 </li>
@@ -56,111 +61,9 @@
     </section>
 
     <section class="section__margin" id="works">
-        <div class="work__container-items_container">
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="./images/Portoflio-Cards/Portfolio1.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Tonic</h3>
-                        <div class="card__body-company">
-                            <h4>CANOPY</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Back End Dev</li>
-                                <li>2022</li>
-                            </ul>
-                        </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img image__right">
-                        <img src="./images/Portoflio-Cards/Portfolio2.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Multi-Post Stories</h3>
-                        <div class="card__body-company">
-                            <h4>FACEBOOK</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Full Stack Dev</li>
-                                <li>2022git</li>
-                            </ul>
-                        </div>
-                        <p>Experimental content creation feature that allows users to add to an existing story over the
-                            course of a day without
-                            spamming their friends.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="./images/Portoflio-Cards/Portfolio3.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Facebook 360</h3>
-                        <div class="card__body-company">
-                            <h4>FACEBOOK</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Full Stack Dev</li>
-                                <li>2015</li>
-                            </ul>
-                        </div>
-                        <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover
-                            and enjoy 360 photos and
-                            videos on Gear VR.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img image__right">
-                        <img src="./images/Portoflio-Cards/Portfolio1.png" alt="" />
-                    </div>
-                    <div class="card__body-content">
-                        <h3>Uber Navigation</h3>
-                        <div class="card__body-company">
-                            <h4>Uber</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Lead Developer</li>
-                                <li>2018</li>
-                            </ul>
-                        </div>
-                        <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most
-                            expensive computer: your car.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
-                    </div>
-                </div>
-            </div>
+        <h2 class="works__title">My Awsome Work</h2>
+        <div id="cardsContainer" class="work__container-items_container">
+
         </div>
     </section>
 
@@ -218,14 +121,27 @@
             <p> If you have an application you are interested in developing, a feature that you need built or a project
                 that
                 needs coding. I’d love to help with it </p>
-            <form class="contact__form" method="post" action="https://formspree.io/f/xeqngaoy">
-                <input type="text" maxlength="30" name="full_name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <textarea name="msg" placeholder="Write your message here " maxlength="500" required></textarea>
-                <button type="submit">Get It Touch</button>
+            <form id="contactForm" class="contact__form" method="post" action="https://formspree.io/f/xeqngaoy">
+                <div class="form__control">
+                    <input type="text" maxlength="30" name="full_name" placeholder="Full Name" required>
+                </div>
+                <div class="form__control">
+                    <input id="email" type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form__control">
+                    <textarea name="msg" placeholder="Write your message here " maxlength="500" required></textarea>
+                </div>
+                <small id="error_message" class="hidden"></small>
+                <button type="submit" class="btn--submit">Get It Touch</button>
             </form>
         </div>
     </footer>
+
+    <div id="modal" class="modal__container hidden">
+
+    </div>
+
+    <script src="index.js"></script>
 
 </body>
 
