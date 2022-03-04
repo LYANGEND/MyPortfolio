@@ -195,6 +195,21 @@ body.noscroll {
   margin-top: 10px;
 }
 
+.lets-connect:hover {
+  color: #6070FF;
+  transition: all 0.3s linear;
+}
+
+.icon-hover {
+  font-size: 24px;
+  color: #505F79;
+}
+
+.icon-hover:hover {
+  color: #6070FF;
+  transition: all 0.3s linear;
+}
+
 .bars {
   padding-right: 22px;
 }
