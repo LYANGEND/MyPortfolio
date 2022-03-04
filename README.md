@@ -42,7 +42,7 @@ to test or run the application double click on the `index.html` file to open in 
 👤 **Author**
 
 - GitHub: [@LYANGENDA](https://github.com/LYANGEND)
-- Twitter: [@lyangenda](https://twitter.com/devMo7amed)
+- Twitter: [@lyangenda](https://twitter.com/david_lyangenda)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lyangenda-623087151/)
 
 ## 🤝 Contributing
