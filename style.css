@@ -196,17 +196,17 @@ body.noscroll {
 }
 
 .lets-connect:hover {
-  color: #6070FF;
+  color: #6070ff;
   transition: all 0.3s linear;
 }
 
 .icon-hover {
   font-size: 24px;
-  color: #505F79;
+  color: #505f79;
 }
 
 .icon-hover:hover {
-  color: #6070FF;
+  color: #6070ff;
   transition: all 0.3s linear;
 }
 
