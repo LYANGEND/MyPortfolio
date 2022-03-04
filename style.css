@@ -387,7 +387,14 @@ button {
 }
 
 .getmyr {
+  display: flex;
+  gap: 20px;
   padding-bottom: 0;
+  margin-top: 3%;
+}
+
+.getmyr li {
+  list-style: none;
 }
 
 .btn-resume {
