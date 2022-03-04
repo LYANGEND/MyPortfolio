@@ -8,7 +8,7 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 ## Desktop Version
 
-![screenshot](./images/ScreenShots/ScreenShot1.png)
+![screenshot](./images/Davidportfolio.png)
 
 ## Mobile Version
 
@@ -37,12 +37,10 @@ to test or run the application double click on the `index.html` file to open in 
 
 ## Authors
 
-## Authors
-
 👤 **Author**
 
 - GitHub: [@LYANGENDA](https://github.com/LYANGEND)
-- Twitter: [@lyangenda](https://twitter.com/devMo7amed)
+- Twitter: [@lyangenda](https://twitter.com/david_lyangenda)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lyangenda-623087151/)
 
 ## 🤝 Contributing
