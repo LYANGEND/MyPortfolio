@@ -4,7 +4,7 @@
 
 This is my pesonal Website and Portfolio that list all my profissional skils, Resume and the awsome work.
 
-# Screen Shots
+# Screen Shot
 
 ## Desktop Version
 
