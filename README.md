@@ -12,7 +12,7 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 ## Mobile Version
 
-![screenshot](./images/ScreenShots/mobile-ScreenShot1.png)
+![screenshot](./images/mobileversion.png)
 
 ## Built With &hearts;
 
@@ -34,8 +34,6 @@ to run the project locally, clone the project using the command
 
 navigate in to the project directory, from GitHub,
 to test or run the application double click on the `index.html` file to open in your browser
-
-## Author
 
 👤 **Author**
 
