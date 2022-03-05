@@ -12,7 +12,7 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 ## Mobile Version
 
-![screenshot](./images/ScreenShots/mobile-ScreenShot1.png)
+![screenshot](./images/mobileshot.png)
 
 ## Built With &hearts;
 
