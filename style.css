@@ -195,6 +195,21 @@ body.noscroll {
   margin-top: 10px;
 }
 
+.lets-connect:hover {
+  color: #6070ff;
+  transition: all 0.3s linear;
+}
+
+.icon-hover {
+  font-size: 24px;
+  color: #505f79;
+}
+
+.icon-hover:hover {
+  color: #6070ff;
+  transition: all 0.3s linear;
+}
+
 .bars {
   padding-right: 22px;
 }
@@ -387,7 +402,14 @@ button {
 }
 
 .getmyr {
+  display: flex;
+  gap: 20px;
   padding-bottom: 0;
+  margin-top: 3%;
+}
+
+.getmyr li {
+  list-style: none;
 }
 
 .btn-resume {
@@ -568,10 +590,11 @@ a .btn-two {
 }
 
 .error-message {
-  color: red !important;
-  margin-top: 0.2rem;
+  color: rgb(192, 8, 8) !important;
+  margin-top: -0.8rem;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  background: rgb(236, 233, 227);
 }
 
 .con-but {

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLY4D8VJF"></script>
+  <script src="https://kit.fontawesome.com/686039ca8a.js" crossorigin="anonymous"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){window.dataLayer.push(arguments);}
@@ -59,11 +60,11 @@
         <p class="lets-connect"> LET'S CONNECT</p>
 
         <ul class="icons-media">
-          <li><a href="#"><img src="images/twitter.png" alt="social"> </a></li>
-          <li><a href="#"><img src="images/Linkedin.png" alt="social"></a></li>
-          <li><a href="#"><img src="images/medium.png" alt="social"></a></li>
-          <li><a href="#"><img src="images/github.png" alt="social"></a></li>
-          <li><a href="#"><img src="images/angellist.png" alt="social"></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter icon-hover"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in icon-hover"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-m icon-hover"></i></a></li>
+          <li><a href="#"><i class="fab fa-github icon-hover"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-angellist icon-hover"></i></a></li>
         </ul>
       </div>
     </section>
@@ -129,14 +130,14 @@
         <h2 class="con-title">Contact me</h2>
         <p class="con-paragraph">If you have an application you are interested in developing, a feature that
           you
-          need built or a project that needs coding. I’d love to help with it</p>
+          need built or a project that needs coding. I'd love to help with it</p>
         <form action="https://formspree.io/f/mzbogvbb" method="POST" class="con-form">
-          <input type="text" name="_name" placeholder="Name" maxlength="30" class="form-text" required>
-          <input type= "email" name="_reply" placeholder= "Please enter your Email" class="form-text" id="mail" required>
-          <small class="error-message"></small>
-          <textarea name="_message" placeholder="Write your message here" cols="20" rows="10" maxlength="500"
+          <input type="text" id="name" name="name" placeholder="Name" maxlength="30" class="form-text" required>
+          <input type= "email" name="email" placeholder= "Please enter your Email" class="form-text" id="mail" required>
+          <textarea id="message" name="message" placeholder="Write your message here" cols="20" rows="10" maxlength="500"
             class="form-text message" required></textarea>
           <button class="con-but" type="submit">Get in touch</button>
+          <small class="error-message"></small>
           
         </form>
       </div>
