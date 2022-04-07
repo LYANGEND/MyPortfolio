@@ -387,7 +387,14 @@ button {
 }
 
 .getmyr {
+  display: flex;
+  gap: 20px;
   padding-bottom: 0;
+  margin-top: 3%;
+}
+
+.getmyr li {
+  list-style: none;
 }
 
 .btn-resume {
@@ -571,7 +578,8 @@ a .btn-two {
   color: red !important;
   margin-top: 0.2rem;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  background: rgb(236, 233, 233);
 }
 
 .con-but {
